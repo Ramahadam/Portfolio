@@ -41,6 +41,7 @@ a{
 }
 .img-responsive{
     width: 100%;
+    height: 200px;
 }
 .container{
     width: 80%;
@@ -52,6 +53,7 @@ a{
 }
 .grid-1x2{
     grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
 }
 .grid-1x3{
   grid-template-columns: repeat(3,1fr);
@@ -232,6 +234,7 @@ header.navbar-bg {
 .hero__image {
     max-width: 100%;
     max-height: 80vh;
+    height: auto;
    
 }
 .hero__heading{
@@ -563,7 +566,7 @@ textarea{
 }
 
 .portofolio__gallary {
-    margin: 3rem 0;
+    margin: 3rem auto;
     padding-bottom: 3rem;
   
    
@@ -579,6 +582,29 @@ textarea{
    
 }
 
+.project{
+    width: 550px;
+    height: 400px;
+    transition: ease-in-out 7s;
+    background-position: top;
+    cursor: pointer;
+}
+.project:hover{
+    background-position: bottom;
+}
+.project.project1{
+    background-image: url('../images/huddle1.png');
+    background-size: cover;
+}
+
+.project.project2{
+    background-image: url('../images/ncgld.png');
+    background-size: cover;
+}
+
+.testimonials{
+    background: #ebecf0;
+}
 
 @media screen and (max-width: 1200px) {
     
